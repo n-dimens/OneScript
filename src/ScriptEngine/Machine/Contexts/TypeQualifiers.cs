@@ -20,18 +20,18 @@ namespace ScriptEngine.Machine.Contexts
 
     public sealed class StringQualifier : TypeQualifierContextBase
     {
-        public StringQualifier(int len, AvailableLengthType lenType = StringQualifier.AvailableLengthType.Variable) : base()
+        public StringQualifier(int len, AvailableLengthType lenType = AvailableLengthType.Variable) : base()
         {
-            Lenght = len;
+            Length = len;
             AvailableLength = lenType;    
         }
 
         public override bool Equals(IValue qualifier)
         {
-            return EqualsImpl<StringQualifier>(qualifier, (o)=>Lenght == o.Lenght && AvailableLength == o.AvailableLength);
+            return EqualsImpl<StringQualifier>(qualifier, (o)=>Length == o.Length && AvailableLength == o.AvailableLength);
         }
         
-        public int Lenght { get; private set; }
+        public int Length { get; private set; }
         public AvailableLengthType AvailableLength { get; private set;}
 
         public enum AvailableLengthType
