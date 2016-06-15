@@ -28,6 +28,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Installer", "Installer\Installer.wixproj", "{BBE794A6-B159-422F-B655-B7F03F25F223}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C950281B-6CAB-49F5-9CDC-D1B7E08E4BFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptEngine.HostedScript.UnitTests", "ScriptEngine.HostedScript.UnitTests\ScriptEngine.HostedScript.UnitTests.csproj", "{553AE869-37C2-43EE-AEB4-6E72B0A00B7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -90,8 +94,19 @@ Global
 		{BBE794A6-B159-422F-B655-B7F03F25F223}.Release|Win32.ActiveCfg = Release|x86
 		{BBE794A6-B159-422F-B655-B7F03F25F223}.Release|x86.ActiveCfg = Release|x86
 		{BBE794A6-B159-422F-B655-B7F03F25F223}.Release|x86.Build.0 = Release|x86
+		{553AE869-37C2-43EE-AEB4-6E72B0A00B7A}.Debug|Win32.ActiveCfg = Debug|x86
+		{553AE869-37C2-43EE-AEB4-6E72B0A00B7A}.Debug|Win32.Build.0 = Debug|x86
+		{553AE869-37C2-43EE-AEB4-6E72B0A00B7A}.Debug|x86.ActiveCfg = Debug|x86
+		{553AE869-37C2-43EE-AEB4-6E72B0A00B7A}.Debug|x86.Build.0 = Debug|x86
+		{553AE869-37C2-43EE-AEB4-6E72B0A00B7A}.Release|Win32.ActiveCfg = Release|x86
+		{553AE869-37C2-43EE-AEB4-6E72B0A00B7A}.Release|Win32.Build.0 = Release|x86
+		{553AE869-37C2-43EE-AEB4-6E72B0A00B7A}.Release|x86.ActiveCfg = Release|x86
+		{553AE869-37C2-43EE-AEB4-6E72B0A00B7A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{553AE869-37C2-43EE-AEB4-6E72B0A00B7A} = {C950281B-6CAB-49F5-9CDC-D1B7E08E4BFE}
 	EndGlobalSection
 EndGlobal
